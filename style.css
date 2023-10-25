@@ -1,7 +1,12 @@
 /* intuitivnější box-sizing pro všechny prvky na stránce */
-html { box-sizing: border-box; }
-*, ::before, ::after { box-sizing: inherit; }
-
+html {
+  box-sizing: border-box;
+}
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
 
 /*
 	Poznámky:
@@ -28,8 +33,185 @@ html { box-sizing: border-box; }
 	#303339		tmavé pozadí patičky
 */
 
-
 body {
-	margin: 0;
+  margin: 0;
+  color: black;
+  font-family: "Lora", serif;
+  font-size: 18px;
+  line-height: 1.5;
 }
 
+.hlavicka {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin: 30px 0;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.menu ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  padding-left: 0;
+}
+
+.button {
+  text-decoration: none;
+  text-align: center;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: black;
+}
+
+.button:hover {
+  color: white;
+  background-color: #f195b2;
+  border-radius: 20px;
+}
+
+.logo {
+  display: flex;
+  width: 170px;
+  margin-right: 250px;
+}
+
+.nadpis {
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
+  line-height: 1.25;
+  margin-top: 0;
+}
+
+.jedna {
+  font-size: 52px;
+  margin-left: 100px;
+}
+
+.dva {
+  font-size: 36px;
+  color: #3e606b;
+}
+
+.tri {
+  font-size: 18px;
+}
+
+.hero {
+  background-image: url(images/cupcake.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-size: cover;
+  color: white;
+  padding: 80px 0;
+}
+
+.hero p {
+  width: 500px;
+  margin-left: 100px;
+  font-style: italic;
+}
+
+.vitejte {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.tlacitko {
+  text-decoration: none;
+  text-align: center;
+  padding: 15px 40px;
+  text-decoration: none;
+  color: white;
+  background-color: #f195b2;
+  border-radius: 30px;
+}
+
+.tlacitko:hover {
+  text-decoration: none;
+  text-align: center;
+  padding: 15px 40px;
+  text-decoration: none;
+  color: white;
+  background-color: #d2567d;
+  border-radius: 30px;
+}
+
+img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+.vitejte-text {
+  padding: 0;
+  margin-bottom: 50px;
+}
+
+.nabidka {
+  background-color: #f0f0f0;
+  padding: 80px 0;
+}
+
+.dnesninabidka {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.produkty {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.produkty img {
+  max-width: 100%;
+  border-radius: 5px 5px 0 0;
+}
+
+.produkt {
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px rgb(197, 197, 197);
+  flex: 0 0 calc((100% - 60px) / 4);
+}
+
+.produkt-obsah {
+  text-align: center;
+  padding: 20px;
+}
+
+.pristup  {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.sloupec {
+  width: 50%;
+  flex: 0 0 calc((100% - 30px) / 2);
+}
+
+.paticka {
+  background-color: #303339;
+  color: white;
+  text-align: center;
+  padding: 30px 0;
+}
